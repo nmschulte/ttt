@@ -17,9 +17,16 @@ or something... those two suck.
 
 # Ideas
 
-In general, a non-destructive solution to adding electronic interface to common foosball tables (Valley-Dynamo Tornado,
+**Update!!**  I found this project, which I think we should at least use as a starting point: [Digital Foosball](https://github.com/sinnerschrader/digitalfoosball), (http://digitalfoosball.com/)
+
+In general, the idea of the project is to create a non-destructive solution for adding electronic interface to common foosball tables (Valley-Dynamo Tornado,
 probably others).
 
+Going for fastest proof-of-concept (well, probably want to go for prototype quality, as we don't own the table and it's
+actively used; best to avoid annoying everyone else) in first attempt.  Arduino-based solution likely due to familiarity;
+WiFi shield (and now, the digitalfoosball project).
+
+## Idea tree
  - audio driver + speaker
   - derp...
  - real-time clock
@@ -46,6 +53,10 @@ probably others).
   - environmental tracking (temperature, "movement" (accelerometer), ...) ??
    - make system easy to extend (generally) ??
 
-Going for fastest proof-of-concept (well, probably want to go for prototype quality, as we don't own the table and it's
-actively used; best to avoid annyone everyon else) in first attempt.  Arduino-based solution likely due to familiarity;
-WiFi shield.
+## Further ideas
+ - camera(s) watching table top
+  - ball tracking
+   - AI (assuming way to control shafts...)
+   - analytics
+  - instant replay/online viewing
+ - AI/shaft control
